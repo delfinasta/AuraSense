@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraSense | Velas de Soja - Delfina Nasta Lyon - DGN5AP - 2025</title>
+  <meta name="description" content="Velas de soja hechas a mano. Aromas honestos (vainilla, chocolate, café, eucalipto y coco), combustión limpia y frascos reutilizables. Encendé tu ritual." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+
+<body>
+  <div id="inicio"></div>
+
+  <div id="contenedor">
+
+<header>
+  <div class="contenedor">
+    <section id="banner">
+      <h1 class="sr-only">aurasense — velas de soja</h1> <!--Para seo-->
+      <img src="img/banner-aurasense.jpg" alt="Velas de soja AuraSense">
+    </section>
+  </div>
+</header>
+
+<!-- NAV (afuera del header para q sea sticky)-->
+<div class="nav-wrap">
+  <div class="contenedor header-flex">
+    <!-- Toggle y botón menú para mobile -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="abrir menú">
+    <label for="nav-toggle" class="nav-btn">menú</label>
+
+    <!-- NAV -->
+    <nav id="site-nav" class="nav-sticky">
+      <label for="nav-toggle" class="nav-close" aria-label="cerrar menú">×</label>
+      <ul>
+        <li><a href="#inicio">inicio</a></li>
+        <li><a href="#aromas">aromas</a></li>
+        <li><a href="#esencia">esencia</a></li>
+        <li><a href="#nosotros">nosotros</a></li>
+        <li><a href="#cuidados">cuidados</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <!--sección: aromas-->
+      <section id="aromas" class="seccion-aromas">
+        <div class="contenedor">
+          <h2>aromas</h2>
+
+      <!-- carrusel -->
+      <div class="carousel">
+
+        <!-- radios ocultos visualmente -->
+        <input type="radio" name="aromas-pair" id="par1" checked>
+        <input type="radio" name="aromas-pair" id="par2">
+        <input type="radio" name="aromas-pair" id="par3">
+
+        <!-- Vista en pares del carrusel -->
+        <div class="viewport">
+          <div class="pair" data-pair="1">
+            <figure class="item">
+              <img src="img/aromas-coco.jpg" alt="Vela de coco AuraSense">
+              <figcaption class="caption-mobile"><h3>coco</h3></figcaption>
+            </figure>
+            <figure class="item">
+              <img src="img/aromas-vainilla.jpg" alt="Vela de vainilla AuraSense">
+              <figcaption class="caption-mobile"><h3>vainilla</h3></figcaption>
+            </figure>
+          </div>
+
+          <div class="pair" data-pair="2">
+            <figure class="item">
+              <img src="img/aromas-chocolate.jpg" alt="Vela de chocolate AuraSense">
+              <figcaption class="caption-mobile"><h3>chocolate</h3></figcaption>
+            </figure>
+            <figure class="item">
+              <img src="img/aromas-cafe.jpg" alt="Vela de café AuraSense">
+              <figcaption class="caption-mobile"><h3>café</h3></figcaption>
+            </figure>
+          </div>
+
+          <div class="pair" data-pair="3">
+            <figure class="item">
+              <img src="img/aromas-eucalipto.jpg" alt="Vela de eucalipto AuraSense">
+              <figcaption class="caption-mobile"><h3>eucalipto</h3></figcaption>
+            </figure>
+            <figure class="item">
+              <img src="img/aromas-coco-vainilla.jpg" alt="Vela blend coco y vainilla AuraSense">
+              <figcaption class="caption-mobile"><h3>coco &amp; vainilla</h3></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Nombres y flechas -->
+        <div class="labels">
+          <div class="labels-track">
+
+            <!-- par 1 -->
+            <div class="labels-row labels-1">
+              <div class="name left"><h3>coco</h3></div>
+              <div class="arrows">
+                <label for="par3" class="flecha izq" aria-label="ver anterior"><img src="img/flechaizq.png" alt=""></label>
+                <label for="par2" class="flecha der" aria-label="ver siguiente"><img src="img/flechader.png" alt=""></label>
+              </div>
+              <div class="name right"><h3>vainilla</h3></div>
+            </div>
+
+            <!-- par 2 -->
+            <div class="labels-row labels-2">
+              <div class="name left"><h3>chocolate</h3></div>
+              <div class="arrows">
+                <label for="par1" class="flecha izq" aria-label="ver anterior"><img src="img/flechaizq.png" alt=""></label>
+                <label for="par3" class="flecha der" aria-label="ver siguiente"><img src="img/flechader.png" alt=""></label>
+              </div>
+              <div class="name right"><h3>café</h3></div>
+            </div>
+
+            <!-- par 3 -->
+            <div class="labels-row labels-3">
+              <div class="name left"><h3>eucalipto</h3></div>
+              <div class="arrows">
+                <label for="par2" class="flecha izq" aria-label="ver anterior"><img src="img/flechaizq.png" alt=""></label>
+                <label for="par1" class="flecha der" aria-label="ver siguiente"><img src="img/flechader.png" alt=""></label>
+              </div>
+              <div class="name right"><h3>coco &amp; vainilla</h3></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+          <!--cta a tienda externa-->
+          <div class="cta-aromas">
+            <a class="boton" href="https://aurasense.empretienda.com.ar/?fbclid=PAZXh0bgNhZW0CMTEAAafyI2IF6WqvCqHFBoqi62KDigJbutIEiBxRFD2RGB_jqxVmaciuQ-w7wLrRBw_aem_qi5Jrpu20q2mySrRaNTYSg" target="_blank" rel="noopener">
+              comprá tu vela
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--sección: esencia-->
+      <section id="esencia" class="seccion-esencia">
+        <div class="contenedor">
+          <h2>esencia</h2>
+
+          <div class="grid-esencia">
+            <article class="bloque">
+              <h3>natural y sustentable</h3>
+              <p>cera de soja 100% vegetal y<br>biodegradable en envases reutilizables.</p>
+              <img src="img/esencia-natural.gif" alt="Cera de soja en copos, ingrediente vegetal" />
+            </article>
+
+            <article class="bloque">
+              <img src="img/esencia-combustion.gif" alt="Vela encendida con llama estable" />
+              <h3>combustión limpia</h3>
+              <p>sin humo tóxico, seguras<br>para tu hogar y tu ambiente.</p>
+            </article>
+
+            <article class="bloque">
+              <h3>diseño cuidado</h3>
+              <p>frascos y etiquetas pensados<br>para complementar tus espacios.</p>
+              <img src="img/esencia-diseno.gif" alt="Frascos y etiquetas minimalistas" />
+            </article>
+
+            <article class="bloque">
+              <img src="img/esencia-variedad.gif" alt="Selección de frascos con distintos aromas" />
+              <h3>variedad de aromas</h3>
+              <p>para cada momento: vainilla, chocolate,<br>café, eucalipto, coco y más.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección: nosotros-->
+      <section id="nosotros" class="seccion-nosotros">
+        <div class="contenedor">
+          <h2>nosotros</h2>
+
+          <section id="contenido" class="grid-nosotros">
+            <div class="columna1">
+              <p>AuraSense nace para convertir un gesto cotidiano en un ritual sensorial: luz cálida, aroma honesto y calma. ¡Que no se pierda el hábito de prender una velita y relajarse!</p>
+              <p>usamos cera de soja, un recurso renovable que ofrece combustión pareja y más duración, alineado con una mirada de diseño responsable.</p>
+            </div>
+
+            <div class="columna2">
+              <p>nuestros aromas acompañan estados de ánimo reales: vainilla (dulzura), chocolate (placer), café (foco), eucalipto (frescura) y coco (verano sutil).</p>
+              <p>producimos en pequeños lotes y a mano, cuidando materias primas, vertido y acabado para lograr consistencia aromática.</p>
+          
+            </div>
+
+            <div class="columna3">
+              <p>la estética importa: frascos versátiles pensados para reuso como contenedores o detalles decorativos, extendiendo el ciclo del producto.</p>
+              <p>nuestra intención es simple: ofrecer una pausa consciente que transforme el ambiente y, por un momento, también tu día.</p>
+            </div>
+          </section>
+
+          <!-- banner inferior -->
+          <section id="banner-nosotros">
+            <img src="img/banner2-aurasense.jpg" alt="Velas AuraSense ambientando un espacio de descanso" />
+          </section>
+        </div>
+      </section>
+
+      <!-- sección: cuidados -->
+      <section id="cuidados" class="seccion-cuidados">
+        <div class="contenedor">
+          <h2>cuidados</h2>
+
+          <div class="grid-cuidados">
+            <div class="columna1">
+              <p>mantené la mecha de 0,5 a 1 centímetro antes de encender.</p>
+              <p>no dejes la vela encendida sin supervisión ni cerca de corrientes de aire.</p>
+            </div>
+
+            <div class="columna2">
+              <img src="img/cuidados-vela.png" alt="Ilustración de vela encendida y mecha recortada" />
+              <p>primer encendido: esperá a que la capa superior se derrita de borde a borde para evitar “tunelado”.</p>
+            </div>
+
+            <div class="columna3">
+              <p>reutilizá el frasco: limpiá los restos de cera con agua tibia y jabón una vez fría.</p>
+              <p>apagá con apagavelas o tapando el frasco suavemente, sin soplar fuerte.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección: cta independiente-->
+      <section id="cta" class="seccion-cta">
+        <div class="contenedor">
+          <h2>elegí tu vela</h2>
+          <p>definí tu aroma y transformá tu espacio ahora</p>
+          <a class="boton" href="https://aurasense.empretienda.com.ar/?fbclid=PAZXh0bgNhZW0CMTEAAafyI2IF6WqvCqHFBoqi62KDigJbutIEiBxRFD2RGB_jqxVmaciuQ-w7wLrRBw_aem_qi5Jrpu20q2mySrRaNTYSg" target="_blank" rel="noopener">
+            ir a la tienda
+          </a>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+ 
+
+  <footer>
+    <div class="contenedor">
+      <ul class="footer-links">
+        <li>
+          <a href="https://www.instagram.com/aurasense.velas/" target="_blank" rel="noopener">Instagram</a>
+        </li>
+        <li>
+          <a href="https://aurasense.empretienda.com.ar/?fbclid=PAZXh0bgNhZW0CMTEAAafyI2IF6WqvCqHFBoqi62KDigJbutIEiBxRFD2RGB_jqxVmaciuQ-w7wLrRBw_aem_qi5Jrpu20q2mySrRaNTYSg" target="_blank" rel="noopener">Tienda</a>
+        </li>
+      </ul>
+
+      <p> © 2025 AuraSense. Todos los derechos reservados | Designed & developed by Delfina Nasta - Composición Digital - DGN5AP - 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>
